@@ -1,0 +1,36 @@
+
+-------------------------------------------------------------------------------------------
+FFT tutorial in gnuradio - YouTube
+https://www.youtube.com/watch?v=E7RjvDOudIo
+https://www.youtube.com/watch?v=WKJBo0SzP3Q
+
+
+
+link : 
+https://ukdiss.com/examples/implementation-of-modulation-schemes.php
+https://www.google.com/search?q=ofdm+%2B+audio+source&tbm=isch&ved=2ahUKEwix2t6HpI6BAxU7vycCHX9uD3QQ2-cCegQIABAA&oq=ofdm+%2B+audio+source&gs_lcp=CgNpbWcQAzoECAAQHjoGCAAQCBAeUK4CWJseYIkfaABwAHgAgAHtAogB2yiSAQYyLTEyLjaYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=f2b0ZPGeAbv-nsEP_9y9oAc&client=ubuntu&hs=UkS
+https://wiki.gnuradio.org/index.php/Basic_OFDM_Tutorial
+https://classes.engineering.wustl.edu/~jain/cse574-22/ftp/ofdm_sdr/index.html
+https://ez.analog.com/adieducation/university-program/f/q-a/116538/problems-with-modem-ofdm-with-gnuradio-and-plutosdr
+https://wireless-square.com/2016/01/14/fm-receiver-using-gnu-radio/
+https://www.youtube.com/watch?app=desktop&v=kplMaL7e2l4
+https://arxiv.org/pdf/2302.05775.pdf
+https://www.researchgate.net/figure/Implementation-of-OFDM-modulation-and-demodulation-with-Channel-model_fig2_275720911
+file:///home/oainr/Downloads/An_Experimental_Study_on_Channel_Estimation_and_Sy.pdf
+https://www.youtube.com/watch?app=desktop&v=LZDWfnrxo6c
+https://www.semanticscholar.org/paper/Implementation-of-OFDM-systems-using-GNU-Radio-and-Nguyen/733847b3bc1b129791dcf7edce0215dcdec73766
+https://honors.libraries.psu.edu/files/final_submissions/4410  (interessant)
+https://www.youtube.com/watch?v=tj_9p_rXULM
+https://github.com/gallicchio/learnSDR
+https://gnuradio.blogspot.com/2013/12/discuss-gnuradio-qam-modulation.html
+https://dsp.stackexchange.com/questions/68306/16-qam-gnu-radio
+https://dsp.stackexchange.com/questions/71310/packet-encoder-gnu-qpsk-transmission
+file:///home/oainr/Downloads/125984561.pdf
+
+
+
+https://github.com/fperal/gnuradio?search=1
+https://github.com/rtlsdrblog/rtl-sdr-blog
+https://github.com/timkim0713/RFJamming-FMRadio-SDR
+
+
