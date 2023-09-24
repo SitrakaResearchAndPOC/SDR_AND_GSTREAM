@@ -119,6 +119,20 @@ ctrl+shift + T :
 gst-play-1.0 video1.ts 
 ```
 
+## FFMPEG FOR CONVERTING WAV FILE [link](https://askubuntu.com/questions/919788/convert-mp3-file-to-wav-using-the-command-line)
+```
+ffmpeg -i input.mp3 output.wav
+```
+or
+```
+mpg123 -w output.wav input.mp3
+```
+
+## FFMPEG FOR CONVERING TS FILE
+```
+ffmpeg -i input.mp4 -c copy -bsf h264_mp4toannexb output.ts
+```
+
 # DOCUMENTATIONS 
 * https://xilinx.gitlab.avnet.com/petalinux/gstreamer-reference/gstreamer/ubuntu/ubuntu_18.04_bionic_install/
 * https://stackoverflow.com/questions/69269127/gstreamer-combine-video-and-sound-from-different-sources-and-broadcast-to-rtmp
