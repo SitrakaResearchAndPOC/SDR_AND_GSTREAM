@@ -1,0 +1,27 @@
+cd /etc/modprobe.d/
+could be rename : sudo nano /etc/modprobe.d/blacklist-rtl2832.conf 
+touch backlist-rtl.conf 
+apt-get install mousepad
+mousepad backlist-rtl.conf
+
+ADDING THIS CONFIGURATION : 
+    blacklist dvb_usb_rtl28xxu
+    blacklist rtl2832
+    blacklist rtl2830
+
+
+mousepad  /etc/udev/rules.d/rtl-sdr.rules
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2832", MODE:="0666"
+
+should be replaced by :
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2832", MODE:="0666", GROUP="adm", SYMLINK+="rtl_sdr"
+
+
+https://www.reddit.com/r/homeassistant/comments/rr1guj/blacklist_rtl_sdr_drivers_modprobe_doesnt_work/?rdt=57652
+https://groups.google.com/g/ultra-cheap-sdr/c/v_GktYco0_Q
+
+
+
+
+
+
