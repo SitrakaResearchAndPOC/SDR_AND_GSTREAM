@@ -10,6 +10,11 @@ apt-get install  libtool git cmake libusb1.0-0dev build-essential libc6-dev libr
 ```
 
 # RTL-SDR BLACKLIST PROBLEM
+IF  : 
+```
+rtl_test 
+```
+SHOW ERROR BLACKLIST
 ```
 apt update
 ```
