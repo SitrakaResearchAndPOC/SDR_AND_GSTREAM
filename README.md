@@ -1,5 +1,61 @@
-# SDR_AND_GSTREAM
+# SDR MODULATION AND DEMODULATION
 OS : UBUNTU 18.04
+
+# INSTALLATION : 
+```
+apt-get install hackrf gnuradio rtl-sdr ffmpeg vlc gr-osmosdr
+```
+```
+apt-get install  libtool git cmake libusb1.0-0dev build-essential libc6-dev librtlsdr-dev
+```
+
+# RTL-SDR BLACKLIST PROBLEM
+```
+apt update
+```
+```
+apt-get install mousepad
+```
+```
+cd /etc/modprobe.d/
+```
+```
+touch backlist-rtl.conf 
+```
+OR (could renamed  as : /etc/modprobe.d/blacklist-rtl2832.conf ) 
+```
+touch blacklist-rtl2832.conf  
+```
+ADDING CONFIG BLACKLIST ON CONF FILE
+```
+mousepad blacklist-rtl2832.conf  
+```
+OR 
+```
+mousepad backlist-rtl.conf
+```
+ADDING THIS CONFIGURATION : 
+```
+    blacklist dvb_usb_rtl28xxu
+    blacklist rtl2832
+    blacklist rtl2830
+```
+CHANGING RULES
+```
+mousepad  /etc/udev/rules.d/rtl-sdr.rules
+```
+CHANGING
+```
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2832", MODE:="0666"
+```
+BY :
+```
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2832", MODE:="0666", GROUP="adm", SYMLINK+="rtl_sdr"
+```
+
+
+
+# SDR_AND_GSTREAM
 
 ## INSTALLING GTREAM
 
@@ -149,7 +205,14 @@ This second command, sometimes doesn't run :
 ffmpeg -i input.mp4 -c copy -bsf h264_mp4toannexb output.ts
 ```
 
-# DOCUMENTATIONS 
+# DOCUMENTATIONS RTL_SDR BLACKLIST
+* https://www.reddit.com/r/homeassistant/comments/rr1guj/blacklist_rtl_sdr_drivers_modprobe_doesnt_work/?rdt=57652
+* https://groups.google.com/g/ultra-cheap-sdr/c/v_GktYco0_Q
+* https://www.cyberithub.com/how-to-install-librtlsdr-dev-package-on-ubuntu-20-04-lts/
+* https://gist.github.com/n8acl/dab196ce30e1e2139727cb7f76d300d6
+* https://medium.com/@mounoydev/rtl-sdr-rpi-4a1483016833
+
+# DOCUMENTATIONS GSTREAM
 * https://xilinx.gitlab.avnet.com/petalinux/gstreamer-reference/gstreamer/ubuntu/ubuntu_18.04_bionic_install/
 * https://stackoverflow.com/questions/69269127/gstreamer-combine-video-and-sound-from-different-sources-and-broadcast-to-rtmp
 * https://docs.xilinx.com/r/en-US/ug1449-multimedia/Streaming-Out-Using-RTP-Unicast-Example
